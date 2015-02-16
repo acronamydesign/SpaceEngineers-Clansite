@@ -89,6 +89,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'pybb.context_processors.processor',
     'social.apps.django_app.context_processors.backends',
     'social.apps.django_app.context_processors.login_redirect',
+    'django.core.context_processors.request',
     )
 
 SOCIAL_AUTH_ADMIN_USER_SEARCH_FIELDS = ['username', 'first_name', 'email']
