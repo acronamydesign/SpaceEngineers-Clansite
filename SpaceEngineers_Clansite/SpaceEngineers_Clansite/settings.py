@@ -111,6 +111,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'social.apps.django_app.context_processors.login_redirect',
     'django.core.context_processors.request',
     'django.contrib.auth.context_processors.auth',
+    'SpaceEngineers_Clansite.context_processors.GlobalContext',
     )
 
 SOCIAL_AUTH_ADMIN_USER_SEARCH_FIELDS = ['username', 'first_name', 'email']
