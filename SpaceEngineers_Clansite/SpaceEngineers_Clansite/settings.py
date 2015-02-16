@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 
 # Steam Stuff
 
-SOCIAL_AUTH_STEAM_API_KEY = secrets.SecretStuff.SteamApiKey   # 'Put Your Steam Api Dev Key Here' 'as a string'
+SOCIAL_AUTH_STEAM_API_KEY = secrets.SteamKey.Key   # 'Put Your Steam Api Dev Key Here' 'as a string'
 
 SOCIAL_AUTH_STEAM_EXTRA_DATA = ['player']
 
