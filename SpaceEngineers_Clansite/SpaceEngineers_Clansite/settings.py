@@ -25,6 +25,8 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
+TEMPLATE_DIRS = ('C:/Users/Jason/Documents/GitHub/SpaceEngineers-Clansite/SpaceEngineers_Clansite/SpaceEngineers_Clansite/templates',)
+
 ALLOWED_HOSTS = []
 
 # Steam Stuff
@@ -47,6 +49,7 @@ INSTALLED_APPS = (
     'pybb',
     'social.apps.django_app.default',
     'bootstrap3',
+    'menu',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -90,6 +93,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'social.apps.django_app.context_processors.backends',
     'social.apps.django_app.context_processors.login_redirect',
     'django.core.context_processors.request',
+    'django.contrib.auth.context_processors.auth',
     )
 
 SOCIAL_AUTH_ADMIN_USER_SEARCH_FIELDS = ['username', 'first_name', 'email']
