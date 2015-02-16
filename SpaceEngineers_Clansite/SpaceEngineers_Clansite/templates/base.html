@@ -1,22 +1,30 @@
-{% load menu %}{% generate_menu %}
 <!doctype html>
 <html>
     <head>
-        <title>{% block title %}No title set{% endblock %}</title>
+        <title>{% block title %}Home{% endblock %}</title>
 
         {% block headextra %}{% endblock %}
     </head>
 
     <body>
-        <h1>User Menu</h1>
-        {% with menu=menus.user %}{% include "menu.html" %}{% endwith %}
+    {# Load the tag library #}
+    {% load bootstrap3 %}
 
-        <h1>Main Menu</h1>
-        {% with menu=menus.main %}{% include "menu.html" %}{% endwith %}
+    {# Load CSS and JavaScript #}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
 
-        <hr>
+    {# Display django.contrib.messages as Bootstrap alerts #}
 
-        {% block content %}
-        {% endblock %}
+    {% include 'menu.html' %}
+    <div class="header">{% block navbar %}{% endblock %}</div>
+    <p></p>
+    <div class="center-block">{% block content %}{% bootstrap_messages %}{% endblock %}</div>
+    <p></p>
+    <div class="footer"></div>
+
+
+
+
     </body>
 </html>

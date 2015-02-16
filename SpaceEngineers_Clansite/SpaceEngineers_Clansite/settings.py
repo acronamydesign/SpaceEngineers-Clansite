@@ -13,6 +13,9 @@ import os
 import SpaceEngineers_Clansite.secrets as secrets
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
+WEBSITE_TITLE = "Test Site"   #Put Your Clansite Title here
+
+CLAN_NAME = "Proffesors And Doctors" # Add Your Clan Name Here
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
@@ -35,6 +38,20 @@ SOCIAL_AUTH_STEAM_API_KEY = secrets.SteamKey.Key   # 'Put Your Steam Api Dev Key
 
 SOCIAL_AUTH_STEAM_EXTRA_DATA = ['player']
 
+BOOTSTRAP3 = {
+
+    # The URL to the jQuery JavaScript file
+    'jquery_url': '//code.jquery.com/jquery.min.js',
+
+    # The Bootstrap base URL
+    'base_url': '//netdna.bootstrapcdn.com/bootstrap/3.3.1/',
+
+    # The complete URL to the Bootstrap CSS file (None means derive it from base_url)
+    'css_url': None,
+
+    # The complete URL to the Bootstrap CSS file (None means no theme)
+    'theme_url': 'http://bootswatch.com/spacelab/bootstrap.css',
+    }
 
 
 # Application definition
