@@ -5,4 +5,15 @@
 
 {% block content %}
     <div>Static Stuff Goes Here</div>
+    <div id="test">
+        {% for view,regexes in UrlList %}
+        <li><a href="{{ regexes }}">{{ view }}</a></li>
+        {% empty %}
+        <p>No Results</p>
+        {% endfor %}
+
+
+
+
+    </div>
 {% endblock %}

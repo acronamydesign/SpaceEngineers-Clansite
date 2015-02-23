@@ -20,5 +20,7 @@ def staff(request):
 def superuser(request):
     return render_to_response('superuser.html',context_instance=RequestContext(request))
 
+"""
 def forum(request):
     return bb.render()
+"""
