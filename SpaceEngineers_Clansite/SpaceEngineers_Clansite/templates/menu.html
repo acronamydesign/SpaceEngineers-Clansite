@@ -47,7 +47,7 @@
                 <li class="divider"></li>
                 <li><a href="#">Separated link</a></li>
               </ul>
-              <a href={% url 'socialauth_begin' 'steam' %}></a>
+              <a href="{% url 'social:begin' 'steam' %}?next={{ request.path }}">Steam</a>
             </li>
           </ul>
         </div><!-- /.navbar-collapse -->

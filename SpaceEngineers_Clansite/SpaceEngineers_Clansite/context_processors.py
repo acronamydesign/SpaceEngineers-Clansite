@@ -3,7 +3,7 @@ __author__ = 'Jason'
 from SpaceEngineers_Clansite import settings,urls # import the settings file
 from django.core.urlresolvers import get_resolver
 
-
+"""
 def ListAllUrls(debug=False):
     resolver = get_resolver(urls)
     links = {}
@@ -14,12 +14,13 @@ def ListAllUrls(debug=False):
             print(link)
         #links.append(linkdict) - testing - to remove
     return links
-
+"""
 
 
 def GlobalContext(request):
     # return the value you want as a dictionnary. you may add multiple values in there.
-    return {'ClanName': settings.CLAN_NAME,'WebsiteTitle':settings.WEBSITE_TITLE,'UrlList':ListAllUrls()}
+    return {'ClanName': settings.CLAN_NAME,'WebsiteTitle':settings.WEBSITE_TITLE}
+    #return {'ClanName': settings.CLAN_NAME,'WebsiteTitle':settings.WEBSITE_TITLE,'UrlList':ListAllUrls()}
 
 
 if __name__ == '__main__':
